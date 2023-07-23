@@ -33,10 +33,28 @@
     <i>This is italic</i>
     <br>
     <u>This is underline</u>
-
+    <hr>
     <br>
     <big>This is big</big>
     <br>
     <small>This is small</small>
+    <hr>
+    <!-- Subscript and superscript -->
+    <p>CO<sub>2</sub></p>
+    <p>ax<sup>2</sup> + bx + c</p>
+    <hr>
+    <!-- Use of Pre tag -->
+    <pre>Printing and clearing
+        void PyErr_Clear()
+        Part of the Stable ABI.
+        Clear the error indicator. If the error indicator is not set, there is no effect.
+        
+        void PyErr_PrintEx(int set_sys_last_vars)
+        Part of the Stable ABI.
+        Print a standard traceback to sys.stderr and clear the error indicator. Unless the error is a SystemExit, in that case no traceback is printed and the Python process will exit with the error code specified by the SystemExit instance.
+        
+        Call this function only when the error indicator is set. Otherwise it will cause a fatal error!
+        
+        If set_sys_last_vars is nonzero, the variables sys.last_type, sys.last_value and sys.last_traceback will be set to the type, value and traceback of the printed exception, respectively.</pre>
 </body>
 </html>
